@@ -1,36 +1,40 @@
 import { useTransform } from "framer-motion";
-import React from "react";
 import useWrapperScroll from "../Model/useWrapperScroll";
+import Sidebar from "../Sidebar";
 
-import { Container, Header, Logo, Burger, Footer } from './styles'
+
+
+import { Container, Header, Logo, Burger, Footer } from "./styles";
 
 const UniqueOverlay: React.FC = () => {
-    const { scrollYProgress } = useWrapperScroll()
+  const { scrollYProgress } = useWrapperScroll();
 
-    const opacity = useTransform(scrollYProgress, [0.9, 1], [0, 1])
+  const opacity = useTransform(scrollYProgress, [0.9, 1], [0, 1]);
 
-    return (
-        <Container>
-            <Header>
-                <Logo/>
-                <Burger />
-            </Header>
+  return (
+    <Container>
+      <Header>
+        <Logo/>
+        <Burger />
+     
+      </Header>
+      
+     
+      <Footer style={{ opacity }}>
+        <ul>
+          <li>
+            <a href="#">UI Clone</a>
+          </li>
+          <li>
+            <a href="#">made with love</a>
+          </li>
+          <li>
+            <a href="#">by Matheus</a>
+          </li>
+        </ul>
+      </Footer>
+    </Container>
+  );
+};
 
-            <Footer style={{opacity}}>
-                <ul>
-                    <li>
-                        <a href="#">UI Clone</a>
-                    </li>
-                    <li>
-                        <a href="#">made with love</a>
-                    </li>
-                    <li>
-                        <a href="#">by Matheus</a>
-                    </li>
-                </ul>
-            </Footer>
-        </Container>
-    )
-}
-
-export default UniqueOverlay
+export default UniqueOverlay;

@@ -24,13 +24,14 @@ export const Header = styled.div`
   min-height: 52px;
 `;
 export const Logo = styled(LogoSVG)`
-  height: 17px;
+  height: 1.4rem;
   cursor: pointer;
 `;
 
 export const Burger = styled(BurgerSVG)`
-  width: 24px;
-  height: 24px;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.6%;
   cursor: pointer;
 
   padding-right: 5px;
@@ -71,4 +72,4 @@ export const Footer = styled(motion.footer)`
       }
     }
   }
-`
+`;
