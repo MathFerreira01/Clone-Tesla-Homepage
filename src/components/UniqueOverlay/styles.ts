@@ -10,7 +10,7 @@ export const Container = styled.div`
   bottom: 0;
 `;
 
-export const Header = styled.div`
+export const Header = styled.header`
   position: fixed;
   top: 0;
   left: 0;
@@ -22,6 +22,36 @@ export const Header = styled.div`
 
   padding: 0 20px;
   min-height: 52px;
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin-top: 10px;
+  }
+
+  ul > li {
+    list-style: none;
+    padding: 20px;
+
+    font-weight: bold;
+    color: #3d3d3d;
+    cursor: pointer;
+
+    transition: all 0.8s;
+
+    @media (max-width: 900px) {
+      display: none;
+      margin-top: 10px;
+    }
+  }
+  ul > li:hover {
+    background-color: #a1a1a1;
+    border-radius: 100px;
+  }
+  
 `;
 export const Logo = styled(LogoSVG)`
   height: 1.4rem;

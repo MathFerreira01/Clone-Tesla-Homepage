@@ -4,6 +4,7 @@ export const Container = styled.div `
 .colored:nth-child(1) {
 background: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/54a21504-fab5-4e4e-b1d0-bb5ba934c86d/bvlatuR/std/4096x2560/MS-Homepage-Desktop-LHD);
 background-size: cover;
+
 }
 .colored:nth-child(2) {
 background: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/27fd9006-d653-4d01-bc64-f30df30de1a4/bvlatuR/std/4096x2560/MX-Homepage-Desktop-LHD);
